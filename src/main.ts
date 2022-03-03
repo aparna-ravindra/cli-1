@@ -83,7 +83,6 @@ export const run = async () => {
     } catch (error) {
         core.error(error);
         core.setFailed(error.stderr);
-        throw error;
     }
     finally {
         // clean up
